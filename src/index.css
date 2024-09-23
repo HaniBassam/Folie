@@ -24,7 +24,6 @@
   height: auto;
 }
 
-
 /* Navigation */
 nav {
   display: flex;
@@ -58,7 +57,7 @@ nav {
 }
 
 .social-links a {
-  color:  #ffffff;
+  color: #ffffff;
   font-size: 60%;
   margin-right: 0px;
 }
@@ -113,7 +112,7 @@ section {
   left: 2%;
   width: 30%;
   margin-top: 65px;
-  color:  #ffffff;
+  color: #ffffff;
   text-align: center;
   transform: translateX(-100%);
   animation: slide-in-left 1s forwards;
@@ -125,7 +124,7 @@ section {
   bottom: 0%;
   right: 10%;
   width: 30%;
-  color:  #fffdf9;
+  color: #fffdf9;
   text-align: center;
   transform: translateX(100%);
   animation: slide-in-right 1s forwards;
@@ -142,6 +141,7 @@ section {
     transform: translateX(0);
   }
 }
+huh
 
 /* Styling af tekst */
 .overlay-text h1 {
@@ -268,8 +268,6 @@ section {
   .overlay-text {
     top: 40%;
   }
-
-  
 
   .left-text,
   .right-text {
