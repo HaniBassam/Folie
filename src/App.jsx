@@ -87,8 +87,9 @@ function App() {
               </p>
             </div>
             <div className="overlay-text right-text">
-              <h1>&lt;coder&gt;</h1>
-              <p>
+        
+        
+                      <p>
                 Front end developer who writes clean, elegant and efficient
                 code.
               </p>

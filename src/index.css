@@ -20,7 +20,7 @@
 
 /* Billedet af logoet */
 .logo-img {
-  max-width: 100%; /* Gør logoet mere responsivt */
+  max-width: 150%; /* Gør logoet mere responsivt */
   height: auto;
 }
 
@@ -233,7 +233,7 @@ huh
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .footer-nav li {
