@@ -6,7 +6,9 @@ import "../public/img/bedstebud.png";
 import AboutMe from "../src/components/AboutMe"
 import Footer from "../src/components/Footer"
 import Nav from "../src/components/Nav"
-import
+import Portfolie from "../src/components/Portfolio"
+
+
 
 import {
   faTwitter,
@@ -119,6 +121,8 @@ function App() {
         <h1>My Work</h1>
         <p>Showcase some of your projects here.</p>
       </section> */}
+
+      <Portfolie/>
 {/* 
       <section id="blog">
         <h1>Blog</h1>
