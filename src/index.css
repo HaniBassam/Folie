@@ -1,0 +1,311 @@
+/* Reset styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for logoet */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+/* Billedet af logoet */
+.logo-img {
+  max-width: 100%; /* Gør logoet mere responsivt */
+  height: auto;
+}
+
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-size: 15px;
+  transform: scale(0.5);
+  margin-left: 2.5rem;
+}
+
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.nav-list a:hover {
+  color: #ccc;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px; /* Justér afstanden mellem ikonerne */
+  margin-right: 9%;
+}
+
+.social-links a {
+  color:  #ffffff;
+  font-size: 60%;
+  margin-right: 0px;
+}
+
+.social-links a:hover {
+  color: #ccc;
+}
+
+/* Styling for sektionerne */
+section {
+  padding: 0rem 0rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Container to hold the image and text */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 68vh;
+  overflow: hidden;
+}
+
+.aboutme {
+  width: 99vw;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Common text styles */
+.overlay-text {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-40%);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.5s ease-out;
+}
+
+/* Left text (designer) */
+.left-text {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  width: 30%;
+  margin-top: 65px;
+  color:  #ffffff;
+  text-align: center;
+  transform: translateX(-100%);
+  animation: slide-in-left 1s forwards;
+}
+
+/* Right text (coder) */
+.right-text {
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+  width: 30%;
+  color:  #fffdf9;
+  text-align: center;
+  transform: translateX(100%);
+  animation: slide-in-right 1s forwards;
+}
+
+@keyframes slide-in-left {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Styling af tekst */
+.overlay-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  top: 1cm;
+}
+
+/* Sektionens container */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 45%;
+}
+
+/* Styling af linjerne på hver side */
+.line {
+  width: 100px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 -50px;
+}
+
+/* Styling af teksten */
+.section-title h2 {
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px; /* Fjernet 1% og brugt en praktisk værdi */
+  transform: scale(0.5);
+}
+
+/* Footer styling */
+.footer {
+  background-color: #e9e9e9;
+  padding: 20px 20px;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid #f5f5f5;
+}
+
+/* Pil i footeren */
+.footer-arrow {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e9e9e9;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px RGB(233, 233, 233);
+}
+
+.footer-arrow a svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Tekst og links placeret i en vandret række */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 5px;
+  color: #888;
+}
+
+/* Copyright-tekst */
+.footer-content p {
+  margin: 0;
+  font-size: 14px; /* Fjernet 1% og brugt en praktisk værdi */
+}
+
+/* Navigation links */
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.footer-nav li a {
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiv styling for mobil */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+/* Responsiv styling til overlay-teksten */
+@media (max-width: 768px) {
+  .overlay-text {
+    top: 40%;
+  }
+
+  
+
+  .left-text,
+  .right-text {
+    width: 40%;
+  }
+
+  .overlay-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .overlay-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Styling for individuelle sektioner */
+#about {
+  background-color: #f5f5f5;
+}
+
+#portfolio {
+  background-color: #fff;
+}
+
+#blog {
+  background-color: #e0e0e0;
+}
+
+#contact {
+  background-color: #f5f5f5;
+}
+
+/* Responsiv styling for mindre skærme */
+@media (max-width: 430px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
