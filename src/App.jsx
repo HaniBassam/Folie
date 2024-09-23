@@ -3,6 +3,10 @@ import "./index.css"; // Sørg for, at CSS-filen bliver importeret korrekt
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import img from "../public/img/transParrent.png"; // Din logo-fil
 import "../public/img/bedstebud.png";
+import AboutMe from "../src/components/AboutMe"
+import Footer from "../src/components/Footer"
+import Nav from "../src/components/Nav"
+import
 
 import {
   faTwitter,
@@ -14,7 +18,8 @@ import {
 function App() {
   return (
     <div className="App">
-      <nav>
+
+      {/* <nav>
         <div className="logo-container">
           <div className="logo">
             <img
@@ -69,8 +74,10 @@ function App() {
           </a>
         </div>
       </nav>
+       */}
+      <Nav/>
 
-      <section id="about">
+      {/* <section id="AboutMe">
         <h1></h1>
 
         <div className="container">
@@ -87,8 +94,6 @@ function App() {
               </p>
             </div>
             <div className="overlay-text right-text">
-        
-        
               <p>
                 Front end developer who writes clean, elegant and efficient
                 code.
@@ -106,24 +111,27 @@ function App() {
             </section>
           }
         </div>
-      </section>
+      </section> */}
 
-      <section id="portfolio">
+      <AboutMe/>
+      
+      {/* <section id="portfolio">
         <h1>My Work</h1>
         <p>Showcase some of your projects here.</p>
-      </section>
-
+      </section> */}
+{/* 
       <section id="blog">
         <h1>Blog</h1>
         <p>Write about your experiences here.</p>
-      </section>
+      </section> */}
 
-      <section id="contact">
+      {/* <section id="contact">
         <h1>Contact</h1>
         <p>Add a contact form or social media links here.</p>
-      </section>
+      </section> */}
 
-      <footer className="footer">
+<Footer/>
+      {/* <footer className="footer">
         <div className="footer-arrow">
           <a href="#top">
             <svg
@@ -161,9 +169,13 @@ function App() {
         <button class="burger-menu" id="burgerMenu">
           <span class="burger-icon"></span>
         </button>
-      </footer>
+     */}
     </div>
   );
 }
 
 export default App;
+
+
+
+
