@@ -5,24 +5,23 @@
   box-sizing: border-box;
 }
 
-
-/* Styling for logoet */
+/* Styling for logo */
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 6rem;
 }
 
 .logo {
-  width: 100%;
+  width: auto; /* Rettet fra 0% */
   height: auto;
+  text-align: center;
 }
 
-/* Billedet af logoet */
+/* Image of logo */
 .logo-img {
-  max-width: 150%; /* Gør logoet mere responsivt */
   height: auto;
+  width: 70px;
 }
 
 /* Navigation */
@@ -31,20 +30,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  padding: 0rem 1rem; /* Tilføjet en værdi for rem */
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  font-size: 15px;
-  transform: scale(0.5);
-  margin-left: 2.5rem;
+  gap: 1.2rem;
+  font-size: 1%; /* Rettet fra 6px */
+  transform: scale(0.8); /* Skaler ned til 70% af den oprindelige størrelse */
 }
 
 .nav-list a {
   color: #ffffff;
   text-decoration: none;
-  margin-right: 2rem;
+  display: inline-block;
 }
 
 .nav-list a:hover {
@@ -53,8 +53,9 @@ nav {
 
 .social-links {
   display: flex;
-  gap: 8px; /* Justér afstanden mellem ikonerne */
+  gap: 8px;
   margin-right: 9%;
+  font-size: 25px;
 }
 
 .social-links a {
@@ -67,9 +68,8 @@ nav {
   color: #ccc;
 }
 
-/* Styling for sektionerne */
+/* Section styling */
 section {
-  padding: 0rem 0rem;
   text-align: center;
   min-height: 100vh;
 }
@@ -84,12 +84,12 @@ section {
 .container {
   position: relative;
   width: 100vw;
-  height: 68vh;
+  height: 85vh;
   overflow: hidden;
 }
 
 .aboutme {
-  width: 99vw;
+  width: 100vw;
   height: auto;
   object-fit: cover;
   display: block;
@@ -98,8 +98,6 @@ section {
 /* Common text styles */
 .overlay-text {
   position: absolute;
-  top: 70%;
-  transform: translateY(-40%);
   color: white;
   text-align: center;
   font-weight: bold;
@@ -110,7 +108,7 @@ section {
 .left-text {
   position: absolute;
   top: 30%;
-  left: 2%;
+  left: 4%;
   width: 30%;
   margin-top: 65px;
   color: #ffffff;
@@ -122,7 +120,7 @@ section {
 /* Right text (coder) */
 .right-text {
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   right: 10%;
   width: 30%;
   color: #fffdf9;
@@ -142,9 +140,8 @@ section {
     transform: translateX(0);
   }
 }
-huh
 
-/* Styling af tekst */
+/* Text styling */
 .overlay-text h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -153,10 +150,9 @@ huh
 .overlay-text p {
   font-size: 1rem;
   line-height: 1.5;
-  top: 1cm;
 }
 
-/* Sektionens container */
+/* Section title container */
 .section-title {
   display: flex;
   align-items: center;
@@ -164,42 +160,41 @@ huh
   padding-bottom: 45%;
 }
 
-/* Styling af linjerne på hver side */
+/* Line styling */
 .line {
   width: 100px;
   height: 1px;
   background-color: #ccc;
-  margin: 0 -50px;
+  margin: 0 10px;
 }
 
-/* Styling af teksten */
+/* Text styling */
 .section-title h2 {
   font-weight: 500;
   color: #666;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 16px; /* Fjernet 1% og brugt en praktisk værdi */
-  transform: scale(0.5);
+  font-size: 20px; /* Rettet fra 2px */
 }
 
 /* Footer styling */
 .footer {
   background-color: #e9e9e9;
-  padding: 20px 20px;
+  padding: 10px 20px;
   text-align: center;
   position: relative;
   border-top: 1px solid #f5f5f5;
 }
 
-/* Pil i footeren */
+/* Arrow in footer */
 .footer-arrow {
   position: absolute;
-  top: -30px;
+  top: -18px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #e9e9e9;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -208,33 +203,37 @@ huh
 }
 
 .footer-arrow a svg {
-  width: 30px;
-  height: 30px;
+  width: 20px;
 }
 
-/* Tekst og links placeret i en vandret række */
+/* Footer content */
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 5px;
   color: #888;
+  gap: 30px;
 }
 
-/* Copyright-tekst */
+/* Footer copyright text */
 .footer-content p {
   margin: 0;
-  font-size: 14px; /* Fjernet 1% og brugt en praktisk værdi */
+  text-align: left;
+  flex: 1;
+  font-size: 10px; /* Standard font-size */
+  display: inline-block;
 }
 
-/* Navigation links */
+/* Footer navigation links */
 .footer-nav {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1;
 }
 
 .footer-nav li {
@@ -244,14 +243,17 @@ huh
 .footer-nav li a {
   color: #888;
   text-decoration: none;
-  font-size: 14px;
+  text-align: center;
+  font-size: 5px; /* Rettet fra 10px */
+  display: inline-block;
 }
 
 .footer-nav li a:hover {
+  color: #cc3535;
   text-decoration: underline;
 }
 
-/* Responsiv styling for mobil */
+/* Responsive styling for mobile */
 @media (min-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -264,7 +266,7 @@ huh
   }
 }
 
-/* Responsiv styling til overlay-teksten */
+/* Responsive styling for overlay text */
 @media (max-width: 768px) {
   .overlay-text {
     top: 40%;
@@ -284,7 +286,7 @@ huh
   }
 }
 
-/* Styling for individuelle sektioner */
+/* Section specific styling */
 #about {
   background-color: #f5f5f5;
 }
@@ -301,10 +303,16 @@ huh
   background-color: #f5f5f5;
 }
 
-/* Responsiv styling for mindre skærme */
+/* Responsive styling for smaller screens */
 @media (max-width: 430px) {
-  nav ul {
+  .nav-list {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  nav {
+    justify-content: center;
   }
 }

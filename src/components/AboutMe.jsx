@@ -14,7 +14,7 @@ return (
             className="aboutme"
           />
           <div className="overlay-text left-text">
-            <h1>designer</h1>
+            <h1>Designer</h1>
             <p>
               Product designer specialising in UI design and design systems.
             </p>

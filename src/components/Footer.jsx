@@ -44,9 +44,6 @@ export default function footer() {
           </li>
         </ul>
       </div>
-      <button className="burger-menu" id="burgerMenu">
-        <span className="burger-icon"></span>
-      </button>
     </footer>
   );
 }

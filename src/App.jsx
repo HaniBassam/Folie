@@ -2,11 +2,11 @@ import React from "react";
 import "./index.css"; // Sørg for, at CSS-filen bliver importeret korrekt
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import img from "../public/img/transParrent.png"; // Din logo-fil
-import "../public/img/bedstebud.png";
-import AboutMe from "../src/components/AboutMe"
-import Footer from "../src/components/Footer"
-import Nav from "../src/components/Nav"
-import Portfolie from "../src/components/Portfolio"
+import AboutMe from "../src/components/AboutMe";
+import Footer from "../src/components/Footer";
+import Nav from "../src/components/Nav";
+import Portfolie from "../src/components/Portfolio";
+import Contact from "../src/components/Contact";
 
 
 
@@ -133,6 +133,7 @@ function App() {
         <h1>Contact</h1>
         <p>Add a contact form or social media links here.</p>
       </section> */}
+      <Contact/>
 
 <Footer/>
       {/* <footer className="footer">
