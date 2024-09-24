@@ -36,7 +36,7 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 1.4rem;
   font-size: 1%; /* Rettet fra 6px */
   transform: scale(0.8); /* Skaler ned til 70% af den oprindelige størrelse */
 }
@@ -54,7 +54,7 @@ nav {
 .social-links {
   display: flex;
   gap: 8px;
-  margin-right: 9%;
+  margin-right: 5%;
   font-size: 25px;
 }
 
@@ -106,8 +106,7 @@ section {
 
 /* Left text (designer) */
 .left-text {
-  position: absolute;
-  top: 30%;
+  top: 0%;
   left: 4%;
   width: 30%;
   margin-top: 65px;
@@ -119,8 +118,7 @@ section {
 
 /* Right text (coder) */
 .right-text {
-  position: absolute;
-  bottom: 0;
+  margin-bottom: 10;
   right: 10%;
   width: 30%;
   color: #fffdf9;
@@ -174,7 +172,7 @@ section {
   color: #666;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 20px; /* Rettet fra 2px */
+  font-size: 10px; /* Rettet fra 2px */
 }
 
 /* Footer styling */
@@ -189,7 +187,7 @@ section {
 /* Arrow in footer */
 .footer-arrow {
   position: absolute;
-  top: -18px;
+  top: -13px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #e9e9e9;
@@ -203,7 +201,7 @@ section {
 }
 
 .footer-arrow a svg {
-  width: 20px;
+  width: 25px;
 }
 
 /* Footer content */
@@ -219,10 +217,10 @@ section {
 
 /* Footer copyright text */
 .footer-content p {
-  margin: 0;
+padding-top: 0.9%;
   text-align: left;
   flex: 1;
-  font-size: 10px; /* Standard font-size */
+  font-size: 1%; /* Standard font-size */
   display: inline-block;
 }
 

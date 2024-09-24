@@ -4,7 +4,7 @@ export default function footer() {
 
       <section id="portfolio">
         <h1>About Me</h1>
-        <p>I am Hani .</p>
+        <p>I am Hani.</p>
       </section> 
 
   )
