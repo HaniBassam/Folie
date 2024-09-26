@@ -36,9 +36,7 @@ export default function footer() {
           <li>
             <a href="#portfolio">portfolio</a>
           </li>
-          <li>
-            <a href="#blog">blog</a>
-          </li>
+      
           <li>
             <a href="#contact">contact</a>
           </li>
