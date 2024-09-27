@@ -74,8 +74,15 @@ export default function Nav() {
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
+
         </div>
+
       </nav>
+
+      
+
     </>
+
+
   );
 }

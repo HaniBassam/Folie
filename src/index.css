@@ -25,6 +25,41 @@ nav {
   height: 100px;
 }
 
+.background-color {
+  background-color: #f0f0f0;
+}
+
+.cans-container {
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.cans {
+  display: flex;
+  animation: roll 20s linear infinite;  /* Længere varighed for at reducere hastigheden */
+}
+
+.can {
+  width: 100px;
+  height: 100px;
+  margin: 0 40px; /* Juster denne værdi for mere eller mindre plads mellem ikoner */
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(0); /* Starter på sin normale position */
+  }
+  100% {
+    transform: translateX(-500%); /* Ruller hele vejen ud til venstre */
+  }
+}
+
+.cans-container .can {
+  animation: roll 50s linear infinite;
+}
+
 /* Burger-menu styling */
 .burger-menu {
   display: none;
@@ -66,7 +101,14 @@ nav {
 
 .nav-list.open {
   display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -50%; /* Placerer den i højre side */
+
+
 }
+
+  
 
 .nav-list li {
   margin: 1rem 0;
@@ -76,7 +118,8 @@ nav {
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
-  text-align: center;
+  margin-left: 78%;
+
 }
 
 .nav-list li a:hover {
@@ -155,6 +198,7 @@ section {
   animation: slide-in-right 1s forwards;
 }
 
+
 @keyframes slide-in-left {
   100% {
     transform: translateX(0);
@@ -219,6 +263,7 @@ section {
 .footer p {
   color: #888;
   font-size: 14px;
+  margin-right: 70%;
 }
 
 /* Footer navigation */
@@ -267,6 +312,7 @@ section {
 @media (max-width: 768px) {
   .burger-menu {
     display: flex;
+    
   }
 
   .nav-list {
