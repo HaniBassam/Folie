@@ -38,7 +38,7 @@ nav {
 
 .cans {
   display: flex;
-  animation: roll 20s linear infinite;  /* Længere varighed for at reducere hastigheden */
+  animation: roll 20s linear infinite; /* Længere varighed for at reducere hastigheden */
 }
 
 .can {
@@ -49,10 +49,10 @@ nav {
 
 @keyframes roll {
   0% {
-    transform: translateX(0); /* Starter på sin normale position */
+    transform: translateX(500px); /* Starter på sin normale position */
   }
   100% {
-    transform: translateX(-500%); /* Ruller hele vejen ud til venstre */
+    transform: translateX(-500px); /* Ruller hele vejen ud til venstre */
   }
 }
 
@@ -104,11 +104,7 @@ nav {
   flex-direction: column;
   position: fixed;
   right: -50%; /* Placerer den i højre side */
-
-
 }
-
-  
 
 .nav-list li {
   margin: 1rem 0;
@@ -119,7 +115,6 @@ nav {
   font-size: 1.2rem;
   text-decoration: none;
   margin-left: 78%;
-
 }
 
 .nav-list li a:hover {
@@ -172,7 +167,7 @@ section {
   font-weight: bold;
   transition: transform 0.5s ease-out;
   z-index: 10;
-    top: 50%; /* Juster placeringen så den vises på billedet */
+  top: 50%; /* Juster placeringen så den vises på billedet */
   width: 100%;
 }
 
@@ -197,7 +192,6 @@ section {
   transform: translateX(100%);
   animation: slide-in-right 1s forwards;
 }
-
 
 @keyframes slide-in-left {
   100% {
@@ -307,12 +301,10 @@ section {
   width: 30px; /* Gør pilen større */
 }
 
-
 /* Responsive styles */
 @media (max-width: 768px) {
   .burger-menu {
     display: flex;
-    
   }
 
   .nav-list {
