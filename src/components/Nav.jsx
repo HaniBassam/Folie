@@ -7,23 +7,42 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Nav() {
+export default function Nav({ toggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const flipLogo = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
     <>
       <nav className="nav">
-        <div className="logo-container">
+        <div
+          className={`logo-container ${isFlipped ? "flipped" : ""}`}
+          onClick={flipLogo}
+        >
+          
           <div className="logo">
             <img
               src={"../public/img/transParrent.png"}
-              alt="Logo"
-              className="logo-img"
+              alt="First Logo"
+              className="logo-img front"
             />
+            <img
+              src={"/public/img/transParrent2.png"}
+              alt="Second Logo"
+              className="logo-img back"
+            />
+
+            <button className="theme-button" onClick={toggleTheme}>
+        Tema
+            </button>
+
           </div>
         </div>
 
@@ -74,15 +93,8 @@ export default function Nav() {
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-
         </div>
-
       </nav>
-
-      
-
     </>
-
-
   );
 }

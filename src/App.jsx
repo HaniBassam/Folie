@@ -1,30 +1,36 @@
-import React from "react";
-import "./index.css"; // Sørg for, at CSS-filen bliver importeret korrekt
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AboutMe from "./Components/AboutMe";
-import Footer from "./Components/Footer";
-import Nav from "./Components/Nav";
-import Portfolio from "../src/Components/Portfolio";
-import Contact from "./Components/Contact";
-
-import {
-  faTwitter,
-  faFacebook,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import React, { useState, useEffect } from 'react';
+import './index.css';
+import Nav from './Components/Nav'
+import AboutMe from './Components/AboutMe';
+import Portfolio from './Components/Portfolio';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 function App() {
+  // Define a state to manage the theme
+  const [theme, setTheme] = useState('light');
+
+  // Function to toggle between light and dark mode
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme); // Store user preference
+  };
+
+  // Load saved theme from localStorage on mount
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }, []);
+
   return (
     <div className="App">
-      <Nav />
-
+      <Nav toggleTheme={toggleTheme} /> {/* Pass the toggle function to Nav */}
       <AboutMe />
-
       <Portfolio />
-
       <Contact />
-
       <Footer />
     </div>
   );

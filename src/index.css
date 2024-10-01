@@ -5,28 +5,90 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
 /* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8); /* Sort baggrund med gennemsigtighed */
-  padding: 1rem;
   position: relative;
   z-index: 10;
 }
 
 .logo-container {
   display: flex;
-  align-items: center;
+  align-items: center; /* Gør at logoet og knappen står på linje vertikalt */
+  width: 100px;
+  height: 80px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 4%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .logo-img {
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
 }
 
+.theme-button {
+  display: flex;
+  align-items: center; /* Gør at logoet og knappen står på linje vertikalt */
+  margin-left: -40px; /* Tilføj lidt afstand mellem logoet og knappen */
+  margin-top: 5%;
+  padding: 0.1rem 0.1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+} 
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  opacity: 0; /* Skjuler baglogoet som standard */
+}
+
+.flipped .front {
+  transform: rotateY(180deg);
+  opacity: 0; /* Skjuler forlogoet ved flip */
+}
+
+.flipped .back {
+  transform: rotateY(360deg);
+  opacity: 1; /* Viser baglogoet ved flip */
+}
 .background-color {
-  background-color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
 }
 
 .cans-container {
@@ -37,14 +99,12 @@ nav {
 }
 
 .cans {
-  display: flex;
-  animation: roll 20s linear infinite; /* Længere varighed for at reducere hastigheden */
-}
+  display: flex;}
 
 .can {
-  width: 100px;
-  height: 100px;
-  margin: 0 40px; /* Juster denne værdi for mere eller mindre plads mellem ikoner */
+  width: 50px;
+  height: 70px;
+  margin: 0 50px; /* Juster denne værdi for mere eller mindre plads mellem ikoner */
 }
 
 @keyframes roll {
@@ -57,7 +117,7 @@ nav {
 }
 
 .cans-container .can {
-  animation: roll 50s linear infinite;
+  animation: roll 5s linear infinite;
 }
 
 /* Burger-menu styling */
@@ -102,8 +162,12 @@ nav {
 .nav-list.open {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  right: -50%; /* Placerer den i højre side */
+  align-items: center;
+  position:fixed;
+  right: -33%;
+  width: 200px; /* Indstil den ønskede bredde */
+  height: auto;  /* Juster højden automatisk baseret på indhold */
+  padding: 10px; /* Tilføj polstring for at give lidt luft omkring teksten */
 }
 
 .nav-list li {
@@ -148,7 +212,7 @@ section {
 
 .image-container {
   width: 100%;
-  height: 650px; /* Juster højden efter behov */
+  height: 700px; /* Juster højden efter behov */
   overflow: hidden;
 }
 
@@ -306,6 +370,20 @@ section {
   .burger-menu {
     display: flex;
   }
+
+
+.theme-button {
+  display: flex;
+  align-items: center; /* Gør at logoet og knappen står på linje vertikalt */
+  margin-left: -9px; /* Tilføj lidt afstand mellem logoet og knappen */
+  margin-top: 1%;
+  padding: 0.1rem 0.1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+} 
+
 
   .nav-list {
     flex-direction: column;
