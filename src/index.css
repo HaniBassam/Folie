@@ -120,6 +120,41 @@ nav {
   animation: roll 5s linear infinite;
 }
 
+/* Portfolio section styling */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivt grid */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.filter-buttons .active {
+  background-color: #007bff;
+}
+
+
 /* Burger-menu styling */
 .burger-menu {
   display: none;
