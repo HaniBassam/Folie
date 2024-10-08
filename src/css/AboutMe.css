@@ -1,0 +1,33 @@
+.front-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.front-page-hero {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  height: 80vh;
+  background-size: 125%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.front-page-hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+}
+
+.front-page-hero h1 {
+  font-size: 3rem;
+}
+
+.front-page-hero p {
+  font-size: 2rem;
+}
+
