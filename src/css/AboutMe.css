@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .front-page-hero {
@@ -31,3 +32,29 @@
   font-size: 2rem;
 }
 
+.front-page-work-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  background-size: 125%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  min-height: unset;
+}
+
+.front-page-work-header p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.front-page-work-header div {
+  width: 30%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+@media screen and (max-width: 1000px) {
+  .front-page-work-header div {
+    width: 10%;
+  }
+}

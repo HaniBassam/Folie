@@ -27,11 +27,11 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Nav toggleTheme={toggleTheme} /> */}
+      <Nav toggleTheme={toggleTheme} />
       <AboutMe />
-      {/* <Portfolio />
-      <Contact />
-      <Footer /> */}
+      <Portfolio />
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
