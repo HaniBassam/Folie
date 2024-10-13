@@ -61,24 +61,29 @@
 
 @media (max-width: 768px) {
 
+  .front-page-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
   .front-page-hero h1 {
-    font-size: 1.5rem; /* Mindre skriftstørrelse til h1 på mindre skærme */
+    font-size: 1.2rem; /* Mindre skriftstørrelse til h1 på mindre skærme */
   }
 
   .front-page-hero p {
-    font-size: 1rem; /* Mindre skriftstørrelse til p på mindre skærme */
+    font-size: 0.8rem; /* Mindre skriftstørrelse til p på mindre skærme */
   }
 }
 
 @media (max-width: 430px) {
   .front-page-hero h1 {
-    font-size: 1.4rem; /* Endnu mindre skriftstørrelse til h1 på meget små skærme */
+    font-size: 1rem; /* Endnu mindre skriftstørrelse til h1 på meget små skærme */
     
   }
 
   .front-page-hero p {
-    font-size: 1.2rem; /* Endnu mindre skriftstørrelse til p på meget små skærme */
-    width: 200%;
+    font-size: 1rem; /* Endnu mindre skriftstørrelse til p på meget små skærme */
   }
 }
 

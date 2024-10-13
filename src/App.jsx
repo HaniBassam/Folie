@@ -3,8 +3,11 @@ import "./index.css";
 import Nav from "./Components/Nav";
 import AboutMe from "./Components/AboutMe";
 import Portfolio from "./Components/Portfolio";
-import Contact from "./Components/Contact";
+import Portfolio2 from "./components/Portfolio2";
+import About from "./components/About";
 import Footer from "./Components/Footer";
+import RandomFacts from "./components/RandomFacts";
+import SkillSet from "./components/SkillSection";
 
 function App() {
   // Define a state to manage the theme
@@ -29,9 +32,21 @@ function App() {
     <div className="App">
       <Nav toggleTheme={toggleTheme} />
       <AboutMe />
-      <Portfolio />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+
+      <div id="portfolio">
+        <Portfolio />
+
+        <Portfolio2 />
+      </div>
+
+      <div id="about">
+        <About />
+      </div>
+      <div id="contact">
+        <SkillSet />
+        <RandomFacts />
+        <Footer />
+      </div>
     </div>
   );
 }
