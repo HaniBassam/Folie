@@ -23,10 +23,6 @@ section {
   --text-color: #000000;
 }
 
-[data-theme="dark"] {
-  --background-color: #121212;
-  --text-color: #ffffff;
-}
 
 body {
   background-color: var(--background-color);
@@ -51,7 +47,6 @@ nav {
   perspective: 1000px;
   cursor: pointer;
   position: relative;
-  margin-left: 20%;
 }
 
 .logo {
@@ -171,24 +166,10 @@ nav {
     display: flex;
   }
 
-  .theme-button {
-    display: flex;
-    align-items: center; /* Gør at logoet og knappen står på linje vertikalt */
-    margin-left: -80px; /* Tilføj lidt afstand mellem logoet og knappen */
-    margin-top: 1%;
-    padding: 0.1rem 0.1rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    outline: none;
-  }
-
   .nav-list {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    right: 0;
     background-color: rgba(0, 0, 0, 0.8);
   }
 

@@ -16,20 +16,70 @@
   background-repeat: no-repeat;
 }
 
+/* Definér slide-in animationer */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* Starter fra venstre */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Slutter i sin oprindelige position */
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Starter fra højre */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Slutter i sin oprindelige position */
+    opacity: 1;
+  }
+}
+
+/* Anvend animationerne på div'en og dens elementer */
 .front-page-hero div {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 20%;
+  width: 30%;
 }
 
 .front-page-hero h1 {
   font-size: 3rem;
+  line-height: 1.5;
+  animation: slideInFromLeft 1s ease-out; /* Glide fra venstre */
 }
 
 .front-page-hero p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  animation: slideInFromRight 1s ease-out; /* Glide fra højre */
+}
+
+@media (max-width: 768px) {
+
+  .front-page-hero h1 {
+    font-size: 1.5rem; /* Mindre skriftstørrelse til h1 på mindre skærme */
+  }
+
+  .front-page-hero p {
+    font-size: 1rem; /* Mindre skriftstørrelse til p på mindre skærme */
+  }
+}
+
+@media (max-width: 430px) {
+  .front-page-hero h1 {
+    font-size: 1.4rem; /* Endnu mindre skriftstørrelse til h1 på meget små skærme */
+    
+  }
+
+  .front-page-hero p {
+    font-size: 1.2rem; /* Endnu mindre skriftstørrelse til p på meget små skærme */
+    width: 200%;
+  }
 }
 
 .front-page-work-header {
@@ -44,14 +94,14 @@
 }
 
 .front-page-work-header p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
   margin: 0;
 }
 
 .front-page-work-header div {
   width: 30%;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 @media screen and (max-width: 1000px) {
   .front-page-work-header div {

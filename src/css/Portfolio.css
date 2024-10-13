@@ -1,19 +1,21 @@
 .work-wrapper {
   display: flex;
   justify-content: center;
-  align-items: top;
+  align-items: flex-start; /* Skiftet til flex-start for bedre lodret justering */
   flex-wrap: wrap;
-  gap: 50px;
-  width: 100vw;
+  gap: 55px; /* Reduceret afstanden mellem boksene */
+  width: 100vw; /* Reduceret bredde for at få det til at se mere kompakt ud */
   height: fit-content;
 }
 
 .article-wrapper {
   text-decoration: none;
   color: black;
-  width: 30%;
-  min-width: 400px;
+  width: 20%; /* Mindre bredde på hver boks */
+  min-width: 250px; /* Reduceret minimum bredde for mere fleksibilitet */
 }
+
+
 
 article {
   display: flex;
@@ -21,29 +23,35 @@ article {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 15px; /* Mindre padding for at gøre boksene mere kompakte */
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.232);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); /* Mindre skygge for et lettere udseende */
 }
 
 .articleInfo {
   width: 100%;
-  margin: 20px 0 0 80px;
+  margin: 15px 0 0 40px; /* Reduceret margin for mere kompakt udseende */
 }
 
 article p {
-  font-size: 3rem;
+  font-size: 1.5rem; /* Reduceret font-størrelse for mere kompakt udseende */
 }
 
 article span {
-  font-size: 2em;
+  font-size: 1em; /* Reduceret font-størrelse på span-elementet */
   color: rgba(0, 0, 0, 0.2);
 }
 
 .articleImg {
   border-radius: 7px;
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-size: cover;
   background-position: center center;
+  transition: transform 0.3s ease; /* Tilføjer en glidende overgang */
 }
+
+.article-wrapper:hover .articleImg {
+  transform: scale(1.05); /* Skalerer billedet lidt op, når musen er over */
+}
+
