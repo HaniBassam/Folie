@@ -3,7 +3,7 @@ import heroImage from "../../public/img/bedstebud.png";
 
 export default function AboutMe() {
   return (
-    <div className=" front-page">
+    <div className="front-page">
       <section
         className="front-page-hero"
         style={{ backgroundImage: `url('${heroImage}')` }}
