@@ -1,19 +1,23 @@
 import React from 'react';
 import '../css/About.css'
-import me from '../../public/img/bedstebud.png'
+import me from '../../public/img/aboutme.jpg'
 
 export default function About() {
   return (
     <div className="about-container">
-      <div className="star-icon">★</div>
-      <h1 className="about-title">About</h1>
+      <h1 className="about-title">About Me</h1>
       <div className="content-wrapper">
         <div className="text-content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliqu<span className="black-dot">●</span>
+            <span className="black-dot">
+             The name is Hani, a 29-year-old front-end developer
+              based in Denmark. With expertise in HTML, CSS, JavaScript, and
+              React, I specialize in creating intuitive and engaging user
+              experiences.My background in multimedia design allows me to
+              combine strong design aesthetics with efficient coding practices.
+              I’m always eager to learn new technologies and bring innovative
+              solutions to life.{" "}
+            </span>
           </p>
         </div>
         <div className="image-container">
