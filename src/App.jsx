@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import Nav from "./Components/Nav";
-import AboutMe from "./Components/AboutMe";
-import Portfolio from "./Components/Portfolio";
+import Nav from "./components/Nav";
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
 import Portfolio2 from "./components/Portfolio2";
 import About from "./components/About";
-import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 import RandomFacts from "./components/RandomFacts";
 import SkillSet from "./components/SkillSection";
 
