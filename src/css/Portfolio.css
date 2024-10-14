@@ -4,14 +4,14 @@
   align-items: flex-start; /* Skiftet til flex-start for bedre lodret justering */
   flex-wrap: wrap;
   gap: 55px; /* Reduceret afstanden mellem boksene */
-  width: 100vw; /* Reduceret bredde for at få det til at se mere kompakt ud */
+  width: 97vw; /* Reduceret bredde for at få det til at se mere kompakt ud */
   height: fit-content;
-  padding: 80px 0px;
+  padding: 75px 0px;
   border-bottom: 2px solid black;
 }
 section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 3px;
 }
 .article-wrapper {
   text-decoration: none;

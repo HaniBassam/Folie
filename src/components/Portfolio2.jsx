@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import "../css/Portfolio2.css";
-import sofa from "../../public/img/sofa.jpg";
-
+import sofa from "../../public/img/cane3.png";
+import cane from "../../public/img/can6.png"
 export default function Portfolio() {
   const [isPop, setIsPop] = useState(false);
 
   return (
     <div className="container">
       <section className='A'>
-        <h1 className="title">portfolio.</h1>
+        <h1 className="title">Portfolio.</h1>
         <p className="subtitle">
           Check out some of my latest design case studies.
         </p>
         <p className="description">
-          I've worked for startups, agencies, corporations, and government and have led projects to design products used by millions of people.
         </p>
       </section>
 
@@ -36,12 +35,11 @@ export default function Portfolio() {
             <input type="range" className="slider" />
             <div className="portfolio-item1">
               <img 
-                src={sofa} 
+                src={cane} 
                 alt="Modern minimal renovation" 
               />
               <div className="item-content">
                 <h3>A modern minimal renovation</h3>
-                <p className="source">estliving.com</p>
                 <p className="time">2 mins ago</p>
               </div>
             </div>
@@ -58,8 +56,7 @@ export default function Portfolio() {
               </svg>
             </button>
             <div className="item-content">
-              <h3>Beaches</h3>
-              <p className="category">Favourites</p>
+              <h3>Bear Cane</h3>
             </div>
           </div>
         </div>

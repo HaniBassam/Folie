@@ -1,6 +1,6 @@
 .about-container {
   max-width: 100%;
-  margin: 20px auto;
+  margin: auto;
   padding: 40px 80px;
   position: relative;
   font-family: Arial, sans-serif;
@@ -40,10 +40,11 @@
 }
 
 .main-image {
-  width: 100%;
+  width: 60%;
   border-radius: 5%;
-  height: auto;
   object-fit: cover;
+  overflow: hidden; /* Skjuler overskydende billede ved zoom */
+  margin-top: -20%;
 }
 
 .circular-image-container {
